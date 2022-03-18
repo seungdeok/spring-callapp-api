@@ -5,7 +5,12 @@ public class User {
     private String userName;
     private String userEmail;
 
-    public User(String userId, String userName, String userEamil) {
+    public User() {}
+
+    public User(String userId, String userName, String userEmail) {
+        this.userId = userId;
+        this.userName = userName;
+        this.userEmail = userEmail;
     }
 
     /**

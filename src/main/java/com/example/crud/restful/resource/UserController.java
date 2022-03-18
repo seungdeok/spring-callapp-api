@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * 05. 유저 삭제 (method: delete, path: /users/{id})
 */
 
-@RestController("CRUDRestFul")
+@RestController
 @RequestMapping(value = "/api/v1")
 
 public class UserController {

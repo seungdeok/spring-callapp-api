@@ -6,16 +6,15 @@ import com.example.crud.dao.UserDao;
 
 import com.example.crud.model.User;
 import com.example.crud.restful.model.param.UserInputParam;
-import com.example.crud.model.ReturnData;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * role requested from method of UserDao
- */
 @Service
 public class UserService {
+	/* 
+	 * db connected
+	*/
 	@Autowired
 	UserDao userDao;
 

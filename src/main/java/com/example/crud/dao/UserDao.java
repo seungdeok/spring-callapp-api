@@ -8,19 +8,14 @@ import com.example.crud.restful.model.param.UserInputParam;
 
 import org.springframework.stereotype.Repository;
 
-/**
- * role of object for access of DB
- */
 @Repository
 public class UserDao {
-    public static List<User> users;
+    public static List<User> users = new ArrayList<>();
 
     static {
-        users = new ArrayList<>();
         users.add(new User("1", "username1", "username1@email.com"));
         users.add(new User("2", "username2", "username2@email.com"));
         users.add(new User("3", "username3", "username3@email.com"));
-        users.add(new User("4", "username4", "username4@email.com"));
     }
 
     
